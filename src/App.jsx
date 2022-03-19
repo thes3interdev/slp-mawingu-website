@@ -6,7 +6,7 @@ import PageHome from './pages/PageHome';
 const client = new ApolloClient({
 	uri:
 		process.env.NODE_ENV === 'production'
-			? 'https://baas.aerocruise-safaris.co.ke/graphql'
+			? 'https://baas.s3.co.ke/graphql'
 			: 'http://localhost:1337/graphql',
 	cache: new InMemoryCache(),
 });
