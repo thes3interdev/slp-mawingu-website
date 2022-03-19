@@ -1,7 +1,8 @@
 steps:
   # build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', '${_GCR_HOSTNAME}/$PROJECT_ID/${_SERVICE_NAME}:$COMMIT_SHA', '.']
+    args:
+      ['build', '-t', '${_GCR_HOSTNAME}/$PROJECT_ID/${_SERVICE_NAME}:$COMMIT_SHA', '.']
     id: Build
 
   # push the container image to the container registry
@@ -36,7 +37,7 @@ options:
   substitutionOption: 'ALLOW_LOOSE'
   # machineType: 'E2_HIGHCPU_8'
 substitutions:
-  _DEPLOY_REGION: europe-west3
+  _DEPLOY_REGION: europe-west1
   _GCR_HOSTNAME: eu.gcr.io
   _PLATFORM: managed
   _SERVICE_NAME: slp-mawingu-website
