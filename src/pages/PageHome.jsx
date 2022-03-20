@@ -1,3 +1,5 @@
+import NavigationHeader from '../components/NavigationHeader';
+import SectionHero from '../components/SectionHero';
 import UtilityTabTitle from '../utilities/UtilityTabTitle';
 
 const PageHome = () => {
@@ -5,11 +7,8 @@ const PageHome = () => {
 
 	return (
 		<div>
-			<div className="flex h-screen w-full items-center justify-center">
-				<h1 className="text-center text-4xl font-medium text-indigo-600">
-					Hello? React, Tailwind and Vite have been correctly configured.
-				</h1>
-			</div>
+			<NavigationHeader />
+			<SectionHero />
 		</div>
 	);
 };

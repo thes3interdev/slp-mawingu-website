@@ -5,6 +5,7 @@ const NavigationHeader = () => {
 	const [navigation, setNavigation] = useState(false);
 
 	const handleClick = () => setNavigation(!navigation);
+	const handleClose = () => setNavigation(!navigation);
 
 	return (
 		<div className="fixed z-10 h-[80px] w-screen bg-zinc-200 drop-shadow-lg">
@@ -24,11 +25,11 @@ const NavigationHeader = () => {
 					<button className="px-5 py-3">Sign Up</button>
 				</div>
 				<div className="md:hidden" onClick={handleClick}>
-					{!navigation ? <XIcon className="h6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+					{!navigation ? <MenuIcon className="h-6 w-6" /> : <XIcon className="h6 w-6" />}
 				</div>
 			</div>
 
-			<ul className={navigation ? 'hidden' : 'absolute w-full bg-zinc-200 px-8'}>
+			<ul className={!navigation ? 'hidden' : 'absolute w-full bg-zinc-200 px-8'}>
 				<li className="w-full border-b-2 border-zinc-300">Home</li>
 				<li className="w-full border-b-2 border-zinc-300">About</li>
 				<li className="w-full border-b-2 border-zinc-300">Support</li>
