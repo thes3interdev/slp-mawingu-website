@@ -20,7 +20,7 @@ const SectionHero = () => {
 					<img src={bgHeroImage} alt="Hero Image" className="w-full" />
 				</div>
 				<div className="absolute bottom-[5%] mx-1 flex transform flex-col rounded-xl border border-slate-300 bg-zinc-200 py-8 text-center shadow-xl md:left-1/2 md:min-w-[760px] md:-translate-x-1/2">
-					<p>Data Services</p>
+					<p className="font-semibold">Data Services</p>
 					<div className="flex flex-wrap justify-between px-4">
 						<p className="flex px-4 py-2 text-slate-500">
 							<CloudUploadIcon className="mr-2 h-6 w-6 text-indigo-600" /> App Security
