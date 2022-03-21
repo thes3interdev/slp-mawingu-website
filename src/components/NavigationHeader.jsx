@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const NavigationHeader = () => {
 	const [navigation, setNavigation] = useState(false);
@@ -12,12 +13,56 @@ const NavigationHeader = () => {
 			<div className="flex h-full w-full items-center justify-between px-2">
 				<div className="flex items-center">
 					<h1 className="mr-4 text-2xl font-semibold uppercase sm:text-3xl">Mawingu</h1>
-					<ul className="hidden md:flex">
-						<li>Home</li>
-						<li>About</li>
-						<li>Support</li>
-						<li>Platform</li>
-						<li>Pricing</li>
+					<ul className="hidden hover:cursor-pointer md:flex">
+						<li>
+							<Link to="Home" smooth={true} duration={500} onClick={handleClose}>
+								Home
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="About"
+								smooth={true}
+								offset={-200}
+								duration={500}
+								onClick={handleClose}
+							>
+								About
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="Support"
+								smooth={true}
+								offset={-50}
+								duration={500}
+								onClick={handleClose}
+							>
+								Support
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="Platform"
+								smooth={true}
+								offset={-100}
+								duration={500}
+								onClick={handleClose}
+							>
+								Platform
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="Pricing"
+								smooth={true}
+								offset={-50}
+								duration={500}
+								onClick={handleClose}
+							>
+								Pricing
+							</Link>
+						</li>
 					</ul>
 				</div>
 				<div className="hidden pr-4 md:flex">
@@ -29,11 +74,31 @@ const NavigationHeader = () => {
 			</div>
 
 			<ul className={!navigation ? 'hidden' : 'absolute w-full bg-zinc-200 px-8'}>
-				<li className="w-full border-b-2 border-zinc-300">Home</li>
-				<li className="w-full border-b-2 border-zinc-300">About</li>
-				<li className="w-full border-b-2 border-zinc-300">Support</li>
-				<li className="w-full border-b-2 border-zinc-300">Platform</li>
-				<li className="w-full border-b-2 border-zinc-300">Pricing</li>
+				<li className="w-full border-b-2 border-zinc-300">
+					<Link to="Home" spy={true} smooth={true} offset={500} duration={500}>
+						Home
+					</Link>
+				</li>
+				<li className="w-full border-b-2 border-zinc-300">
+					<Link to="About" spy={true} smooth={true} offset={-200} duration={500}>
+						About
+					</Link>
+				</li>
+				<li className="w-full border-b-2 border-zinc-300">
+					<Link to="Support" spy={true} smooth={true} offset={-50} duration={500}>
+						Support
+					</Link>
+				</li>
+				<li className="w-full border-b-2 border-zinc-300">
+					<Link to="Platform" spy={true} smooth={true} offset={-100} duration={500}>
+						Platform
+					</Link>
+				</li>
+				<li className="w-full border-b-2 border-zinc-300">
+					<Link to="Pricing" spy={true} smooth={true} offset={-50} duration={500}>
+						Pricing
+					</Link>
+				</li>
 				<div className="my-4 flex flex-col">
 					<button className="px-5 py-3">Sign Up</button>
 				</div>

@@ -1,6 +1,6 @@
 const SectionAbout = () => {
 	return (
-		<div className="my-32 w-full">
+		<div name="About" className="my-32 w-full">
 			<div className="mx-auto max-w-[1240px]">
 				<div className="text-center">
 					<h2 className="text-5xl font-bold">Trusted by Developers Around The World</h2>

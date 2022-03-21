@@ -2,7 +2,7 @@ import { CheckIcon } from '@heroicons/react/solid';
 
 const SectionPricing = () => {
 	return (
-		<div className="my-24 w-full text-white">
+		<div name="Pricing" className="my-24 w-full text-white">
 			<div className="absolute h-[800px] w-full bg-slate-900 mix-blend-overlay"></div>
 			<div className="mx-auto max-w-[1240px] py-12">
 				<div className="py-8 text-center text-slate-300">

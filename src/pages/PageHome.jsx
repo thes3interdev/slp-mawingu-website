@@ -11,7 +11,7 @@ const PageHome = () => {
 	UtilityTabTitle('Home Page | Mawingu Cloud Management');
 
 	return (
-		<div>
+		<div name="Home">
 			<NavigationHeader />
 			<SectionHero />
 			<SectionAbout />
