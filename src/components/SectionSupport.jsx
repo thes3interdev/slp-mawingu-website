@@ -17,7 +17,7 @@ const SectionSupport = () => {
 				<div className="px-4 py-12">
 					<h2 className="pt-8 text-center text-3xl uppercase text-slate-300">Support</h2>
 					<h3 className="py-6 text-center text-5xl font-bold">Finding the Right Team</h3>
-					<p className="py-4 text-3xl text-slate-300">
+					<p className="py-4 text-center text-2xl text-slate-300">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis hic nulla
 						aliquam qui perspiciatis quasi quos vitae. Iste fuga quaerat temporibus
 						excepturi, sapiente quia rerum mollitia fugiat expedita aliquid earum

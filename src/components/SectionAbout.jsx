@@ -4,7 +4,7 @@ const SectionAbout = () => {
 			<div className="mx-auto max-w-[1240px]">
 				<div className="text-center">
 					<h2 className="text-5xl font-bold">Trusted by Developers Around The World</h2>
-					<p className="py-6 text-3xl text-gray-500">
+					<p className="py-6 text-2xl text-gray-500">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
 						necessitatibus ipsam veniam velit totam rem et quasi illo assumenda suscipit.
 					</p>

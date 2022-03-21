@@ -1,5 +1,4 @@
 import { CheckIcon } from '@heroicons/react/outline';
-import React from 'react';
 
 const SectionPlatform = () => {
 	return (
