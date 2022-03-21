@@ -3,6 +3,7 @@ import NavigationHeader from '../components/NavigationHeader';
 import SectionHero from '../components/SectionHero';
 import SectionAbout from '../components/SectionAbout';
 import SectionSupport from '../components/SectionSupport';
+import SectionPlatform from '../components/SectionPlatform';
 
 const PageHome = () => {
 	UtilityTabTitle('Home Page | Superior Software Solutions');
@@ -13,6 +14,7 @@ const PageHome = () => {
 			<SectionHero />
 			<SectionAbout />
 			<SectionSupport />
+			<SectionPlatform />
 		</div>
 	);
 };

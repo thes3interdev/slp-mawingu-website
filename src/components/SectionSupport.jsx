@@ -4,7 +4,7 @@ import SupportBgImage from '../assets/support.jpg';
 
 const SectionSupport = () => {
 	return (
-		<div className="mt-24 h-screen w-full">
+		<div className="mt-24 w-full">
 			<div className="absolute h-[700px] w-full bg-gray-900/90">
 				<img
 					src={SupportBgImage}
