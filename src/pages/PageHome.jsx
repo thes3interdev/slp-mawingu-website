@@ -5,6 +5,7 @@ import SectionAbout from '../components/SectionAbout';
 import SectionSupport from '../components/SectionSupport';
 import SectionPlatform from '../components/SectionPlatform';
 import SectionPricing from '../components/SectionPricing';
+import NavigationFooter from '../components/NavigationFooter';
 
 const PageHome = () => {
 	UtilityTabTitle('Home Page | Mawingu Cloud Management');
@@ -17,6 +18,7 @@ const PageHome = () => {
 			<SectionSupport />
 			<SectionPlatform />
 			<SectionPricing />
+			<NavigationFooter />
 		</div>
 	);
 };
