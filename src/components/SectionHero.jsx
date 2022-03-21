@@ -23,16 +23,16 @@ const SectionHero = () => {
 					<p className="font-semibold">Data Services</p>
 					<div className="flex flex-wrap justify-between px-4">
 						<p className="flex px-4 py-2 text-slate-500">
-							<CloudUploadIcon className="mr-2 h-6 w-6 text-indigo-600" /> App Security
+							<CloudUploadIcon className="h-6 text-indigo-600" /> App Security
 						</p>
 						<p className="flex px-4 py-2 text-slate-500">
-							<DatabaseIcon className="mr-2 h-6 w-6 text-indigo-600" /> Dashboard Design
+							<DatabaseIcon className="h-6 text-indigo-600" /> Dashboard Design
 						</p>
 						<p className="flex px-4 py-2 text-slate-500">
-							<ServerIcon className="mr-2 h-6 w-6 text-indigo-600" /> Cloud Data
+							<ServerIcon className="h-6 text-indigo-600" /> Cloud Data
 						</p>
 						<p className="flex px-4 py-2 text-slate-500">
-							<PaperAirplaneIcon className="mr-2 h-6 w-6 text-indigo-600" /> API
+							<PaperAirplaneIcon className="h-6 text-indigo-600" /> API
 						</p>
 					</div>
 				</div>
