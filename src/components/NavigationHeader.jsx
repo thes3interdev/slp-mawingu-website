@@ -21,10 +21,9 @@ const NavigationHeader = () => {
 					</ul>
 				</div>
 				<div className="hidden pr-4 md:flex">
-					<button className="mr-4 border-none bg-transparent text-black">Sign In</button>
 					<button className="px-5 py-3">Sign Up</button>
 				</div>
-				<div className="md:hidden" onClick={handleClick}>
+				<div className="mr-4 md:hidden" onClick={handleClick}>
 					{!navigation ? <MenuIcon className="h-6 w-6" /> : <XIcon className="h6 w-6" />}
 				</div>
 			</div>
@@ -36,9 +35,6 @@ const NavigationHeader = () => {
 				<li className="w-full border-b-2 border-zinc-300">Platform</li>
 				<li className="w-full border-b-2 border-zinc-300">Pricing</li>
 				<div className="my-4 flex flex-col">
-					<button className="mb-4 bg-transparent px-5 py-3 text-indigo-600">
-						Sign In
-					</button>
 					<button className="px-5 py-3">Sign Up</button>
 				</div>
 			</ul>
